@@ -1,0 +1,16 @@
+[theme]
+base = "light"
+primaryColor = "#0f766e"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f1f5f4"
+textColor = "#1f2937"
+borderColor = "#d6dedc"
+showWidgetBorder = true
+baseRadius = "0.4rem"
+
+[client]
+toolbarMode = "viewer"
+
+[server]
+headless = true
+maxUploadSize = 20

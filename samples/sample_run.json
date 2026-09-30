@@ -1,0 +1,673 @@
+{
+  "run_id": "EV-20260930-130336-D8AC",
+  "name": "Evaluation 2026-09-30",
+  "state": "COMPLETED",
+  "model": "Groq openai/gpt-oss-120b",
+  "started_at": "2026-09-30T13:03:36",
+  "finished_at": "2026-09-30T13:04:30",
+  "locked": false,
+  "locked_at": null,
+  "lock_note": "",
+  "criteria": [
+    {
+      "id": 1,
+      "title": "Technical Capability",
+      "guidance": "Architecture, integrations, scalability, technical fit",
+      "weight": 35.0,
+      "max_points": 10.0,
+      "active": true
+    },
+    {
+      "id": 2,
+      "title": "Implementation Plan",
+      "guidance": "Timeline, milestones, staffing, risk plan",
+      "weight": 15.0,
+      "max_points": 10.0,
+      "active": true
+    },
+    {
+      "id": 3,
+      "title": "Commercial Value",
+      "guidance": "Pricing clarity, total cost, assumptions",
+      "weight": 20.0,
+      "max_points": 10.0,
+      "active": true
+    },
+    {
+      "id": 4,
+      "title": "Security & Compliance",
+      "guidance": "Controls, certifications, privacy, auditability",
+      "weight": 20.0,
+      "max_points": 10.0,
+      "active": true
+    },
+    {
+      "id": 5,
+      "title": "Support & Experience",
+      "guidance": "Support model, similar projects, references",
+      "weight": 10.0,
+      "max_points": 10.0,
+      "active": true
+    }
+  ],
+  "notes": [
+    "Meridian Softworks: the model was asked again because of the first reply. Criterion 5 (Support & Experience) was missing."
+  ],
+  "suppliers": [
+    {
+      "supplier": "Meridian Softworks",
+      "submitted_on": "2026-09-10",
+      "experience": 4.5,
+      "filename": "Meridian_Softworks_Technical_and_Commercial_Proposal.pdf",
+      "summary": "Meridian Softworks presents a technically robust, well‑architected solution with clear implementation phases and strong security certifications. Commercial pricing is transparent but relatively high, and some operational details such as backup objectives and reference contacts are missing. Overall the proposal meets most evaluation criteria with minor gaps.",
+      "risks": [],
+      "warnings": [
+        "Meridian Softworks: the model was asked again because of the first reply. Criterion 5 (Support & Experience) was missing."
+      ],
+      "items": [
+        {
+          "id": 1,
+          "title": "Technical Capability",
+          "weight": 35.0,
+          "max_points": 10.0,
+          "points": 9.0,
+          "status": "OK",
+          "confidence": 0.9,
+          "reason": "The proposal details a cloud‑native microservices architecture on Kubernetes with autoscaling tested to high loads and pre‑built integrations, indicating strong technical capability.",
+          "quote": "OmniServe runs as microservices on Kubernetes (AWS EKS) across three availability zones in Mumbai, with a warm standby in Hyderabad. Horizontal autoscaling has been load-tested to 12,000 concurrent agents and 4,000 tickets per minute.",
+          "quote_page": 2,
+          "quote_ok": true,
+          "strengths": [
+            "cloud‑native microservices",
+            "Kubernetes on AWS EKS",
+            "horizontal autoscaling tested to high load",
+            "pre‑built SAP and Salesforce connectors"
+          ],
+          "gaps": [
+            "EU region optional not default",
+            "no disaster‑recovery RTO/RPO details"
+          ],
+          "questions": [
+            "details of backup and recovery objectives",
+            "service level guarantees for availability"
+          ],
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative": 100.0
+        },
+        {
+          "id": 2,
+          "title": "Implementation Plan",
+          "weight": 15.0,
+          "max_points": 10.0,
+          "points": 8.0,
+          "status": "OK",
+          "confidence": 0.85,
+          "reason": "A clear 26‑week phased implementation plan with defined milestones and a staffed team is provided, though detailed risk mitigation is limited.",
+          "quote": "Delivery takes 26 weeks in four phases, with a pilot in 20 Chennai stores before the national roll-out. Team: one engagement director, one project manager (PMP), two solution architects, four integration engineers and two QA analysts.",
+          "quote_page": 3,
+          "quote_ok": true,
+          "strengths": [
+            "26‑week phased timeline",
+            "clear milestones",
+            "dedicated team roles"
+          ],
+          "gaps": [
+            "risk mitigation details limited"
+          ],
+          "questions": [
+            "contingency plans for schedule slippage",
+            "resource allocation per phase"
+          ],
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative": 88.8889
+        },
+        {
+          "id": 3,
+          "title": "Commercial Value",
+          "weight": 20.0,
+          "max_points": 10.0,
+          "points": 7.0,
+          "status": "OK",
+          "confidence": 0.8,
+          "reason": "Pricing is clearly presented with total cost and assumptions, but the high licence cost and lack of detailed breakdown reduce commercial value.",
+          "quote": "Three-year total: INR 12,31,00,000 excluding GST at 18%. Assumptions: prices fixed for 36 months; travel outside Chennai billed at actuals up to INR 6,00,000 a year; data cleansing of legacy tickets is Sundaram's responsibility.",
+          "quote_page": 3,
+          "quote_ok": true,
+          "strengths": [
+            "total three‑year cost disclosed",
+            "pricing assumptions listed"
+          ],
+          "gaps": [
+            "high upfront licence cost",
+            "support cost not broken out"
+          ],
+          "questions": [
+            "per‑agent licence price breakdown",
+            "optional module pricing"
+          ],
+          "benchmark": 8.0,
+          "gap": -1.0,
+          "relative": 87.5
+        },
+        {
+          "id": 4,
+          "title": "Security & Compliance",
+          "weight": 20.0,
+          "max_points": 10.0,
+          "points": 9.0,
+          "status": "OK",
+          "confidence": 0.9,
+          "reason": "Strong security posture shown by ISO/IEC 27001 and SOC 2 certifications and robust encryption, though penetration test results are not provided.",
+          "quote": "Meridian holds ISO/IEC 27001:2022 (certificate IN-27K-44120, March 2028) and a SOC 2 Type II report for April 2025 to March 2026. Data is encrypted with AES-256 at rest and TLS 1.3 in transit; customer data stays in India.",
+          "quote_page": 4,
+          "quote_ok": true,
+          "strengths": [
+            "ISO/IEC 27001:2022 certification",
+            "SOC 2 Type II report",
+            "AES‑256 at rest and TLS 1.3 encryption"
+          ],
+          "gaps": [
+            "penetration test frequency mentioned but results not shown"
+          ],
+          "questions": [
+            "incident response procedure",
+            "audit log access details"
+          ],
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative": 100.0
+        },
+        {
+          "id": 5,
+          "title": "Support & Experience",
+          "weight": 10.0,
+          "max_points": 10.0,
+          "points": 8.0,
+          "status": "OK",
+          "confidence": 0.85,
+          "reason": "The support model offers 24x7 premium support with rapid P1 response and a named success manager; experience is demonstrated by 38 projects and listed references, though reference details are not provided.",
+          "quote": "Premium support is 24x7 with a 15-minute response for P1 incidents and a named customer success manager. Meridian has delivered 38 contact centre projects since 2014.",
+          "quote_page": 4,
+          "quote_ok": true,
+          "strengths": [
+            "24x7 premium support",
+            "15‑minute P1 response",
+            "named customer success manager",
+            "38 similar projects delivered"
+          ],
+          "gaps": [
+            "reference contacts not included"
+          ],
+          "questions": [
+            "contact details for listed references",
+            "SLA coverage beyond P1 incidents"
+          ],
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative": 88.8889
+        }
+      ],
+      "absolute": 83.5,
+      "ppi": 94.7222,
+      "rank": 1,
+      "rank_note": "Ranked first. Higher PPI than Tarang Systems (94.7 vs 90.6)"
+    },
+    {
+      "supplier": "Tarang Systems",
+      "submitted_on": "2026-09-09",
+      "experience": 4.0,
+      "filename": "Tarang Systems_Response_SRL-IT-2026-014.pdf",
+      "summary": "Tarang Systems presents a technically sound, well‑planned solution with clear pricing and solid security foundations. Experience and references are adequate, though some scalability data and final compliance attestations are pending.",
+      "risks": [],
+      "warnings": [],
+      "items": [
+        {
+          "id": 1,
+          "title": "Technical Capability",
+          "weight": 35.0,
+          "max_points": 10.0,
+          "points": 8.0,
+          "status": "OK",
+          "confidence": 0.9,
+          "reason": "The proposal details a cloud SaaS architecture on Azure with regional redundancy, REST/webhook APIs, and pre‑built adapters for SAP S/4HANA and Salesforce Commerce Cloud, showing solid technical fit.",
+          "quote": "Cloud SaaS on Azure (Pune and Chennai regions), 99.9% availability SLA. - REST and webhook APIs; SAP S/4HANA order lookup through our standard adapter. - Salesforce Commerce Cloud via the MuleSoft connector already used by 4 clients.",
+          "quote_page": 2,
+          "quote_ok": true,
+          "strengths": [
+            "Azure cloud SaaS",
+            "Multiple pre‑built integrations"
+          ],
+          "gaps": [
+            "No explicit scalability metrics"
+          ],
+          "questions": [
+            "Performance benchmarks and capacity limits"
+          ],
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative": 88.8889
+        },
+        {
+          "id": 2,
+          "title": "Implementation Plan",
+          "weight": 15.0,
+          "max_points": 10.0,
+          "points": 9.0,
+          "status": "OK",
+          "confidence": 0.9,
+          "reason": "A clear 24‑week timeline with defined phases, milestones, staffing roles and a risk mitigation plan are provided, demonstrating a well‑structured implementation approach.",
+          "quote": "Weeks 1-4 Discovery, process mapping, design sign-off Weeks 5-12 Configuration, SAP and SFCC adapters, UAT Weeks 13-16 Pilot: 15 stores and one contact centre Weeks 17-24 Rollout in 3 waves, hypercare, handover.",
+          "quote_page": 2,
+          "quote_ok": true,
+          "strengths": [
+            "Detailed phased timeline",
+            "Specific team roles"
+          ],
+          "gaps": [
+            "Limited detail on resource allocation per phase"
+          ],
+          "questions": [
+            "Contingency resource backup plan"
+          ],
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative": 100.0
+        },
+        {
+          "id": 3,
+          "title": "Commercial Value",
+          "weight": 20.0,
+          "max_points": 10.0,
+          "points": 8.0,
+          "status": "OK",
+          "confidence": 0.9,
+          "reason": "Pricing is presented clearly with a three‑year total cost, fixed first‑year rates and CPI‑capped thereafter, plus assumptions for extra integration days.",
+          "quote": "Three-year total INR 8.39 crore plus GST. Prices fixed for 12 months, then capped at CPI. Includes 40 days of integration work; extra days at INR 72,000 per day.",
+          "quote_page": 3,
+          "quote_ok": true,
+          "strengths": [
+            "Transparent total cost",
+            "Fixed pricing for first year"
+          ],
+          "gaps": [
+            "Assumption of CPI cap not quantified"
+          ],
+          "questions": [
+            "Detailed breakdown of support fees and any additional charges"
+          ],
+          "benchmark": 8.0,
+          "gap": 0.0,
+          "relative": 100.0
+        },
+        {
+          "id": 4,
+          "title": "Security & Compliance",
+          "weight": 20.0,
+          "max_points": 10.0,
+          "points": 7.0,
+          "status": "OK",
+          "confidence": 0.9,
+          "reason": "The solution holds ISO/IEC 27001:2022 certification and outlines encryption and audit logging, but the SOC 2 Type II audit is still in progress.",
+          "quote": "ISO/IEC 27001:2022 certified; SOC 2 Type II audit in progress, report expected Q1 2027. Data stays in India; encryption at rest and in transit; role-based access with audit logs.",
+          "quote_page": 4,
+          "quote_ok": true,
+          "strengths": [
+            "ISO 27001 certification",
+            "Data encryption and audit logs"
+          ],
+          "gaps": [
+            "SOC 2 audit not yet completed"
+          ],
+          "questions": [
+            "Incident response procedures and detailed compliance attestations"
+          ],
+          "benchmark": 9.0,
+          "gap": -2.0,
+          "relative": 77.7778
+        },
+        {
+          "id": 5,
+          "title": "Support & Experience",
+          "weight": 10.0,
+          "max_points": 10.0,
+          "points": 8.0,
+          "status": "OK",
+          "confidence": 0.9,
+          "reason": "The vendor cites experience with 11 Indian retailers, reports CSAT improvement, provides a dedicated delivery pod, and lists three recent references of similar scale projects.",
+          "quote": "Nilgiri Fashions - 520 agents, live 2024 GreenBasket Grocery - 300 agents, live 2025 Anand Electronics - 180 agents, live 2023",
+          "quote_page": 4,
+          "quote_ok": true,
+          "strengths": [
+            "Multiple retailer references",
+            "Reported CSAT uplift"
+          ],
+          "gaps": [
+            "References limited to mid‑size deployments"
+          ],
+          "questions": [
+            "Detailed case studies and SLA specifics"
+          ],
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative": 88.8889
+        }
+      ],
+      "absolute": 79.5,
+      "ppi": 90.5556,
+      "rank": 2,
+      "rank_note": "Lower PPI than Meridian Softworks (90.6 vs 94.7)"
+    },
+    {
+      "supplier": "Northstar Consulting",
+      "submitted_on": "2026-09-11",
+      "experience": 5.0,
+      "filename": "NSCS_Proposal_Final (signed).pdf",
+      "summary": "Northstar Consulting presents a solid technical solution with proven experience and strong security credentials. The proposal could be improved with more detailed architecture, risk management, and long‑term cost information.",
+      "risks": [],
+      "warnings": [],
+      "items": [
+        {
+          "id": 1,
+          "title": "Technical Capability",
+          "weight": 35.0,
+          "max_points": 10.0,
+          "points": 7.0,
+          "status": "OK",
+          "confidence": 0.9,
+          "reason": "The proposal shows a proven platform and prior large deployments, indicating good technical fit and scalability. However, integration details are vague and lack a detailed architecture description.",
+          "quote": "We propose to implement ServicePoint, a licensed platform we have deployed for many large retailers, configured to Sundaram's processes by our consultants.",
+          "quote_page": 1,
+          "quote_ok": true,
+          "strengths": [
+            "Proven platform",
+            "Prior large‑scale deployments",
+            "Scalable to 850 agents"
+          ],
+          "gaps": [
+            "Integration details TBD",
+            "No detailed architecture diagram"
+          ],
+          "questions": [
+            "Detailed technical architecture",
+            "Integration testing plan"
+          ],
+          "benchmark": 9.0,
+          "gap": -2.0,
+          "relative": 77.7778
+        },
+        {
+          "id": 2,
+          "title": "Implementation Plan",
+          "weight": 15.0,
+          "max_points": 10.0,
+          "points": 6.0,
+          "status": "OK",
+          "confidence": 0.85,
+          "reason": "A clear 22‑week timeline and experienced staffing are provided, but integration dates are tentative and no explicit risk mitigation plan is included.",
+          "quote": "We estimate 22 weeks: 4 weeks design, 10 weeks build and test, 4 weeks pilot, 4 weeks rollout. Team led by senior programme manager with 15 years experience, 6 consultants.",
+          "quote_page": 1,
+          "quote_ok": false,
+          "strengths": [
+            "Defined timeline",
+            "Experienced programme manager",
+            "Adequate staffing"
+          ],
+          "gaps": [
+            "Integration dates TBC",
+            "No risk plan described"
+          ],
+          "questions": [
+            "Risk management approach",
+            "Contingency measures for integration delays"
+          ],
+          "benchmark": 9.0,
+          "gap": -3.0,
+          "relative": 66.6667
+        },
+        {
+          "id": 3,
+          "title": "Commercial Value",
+          "weight": 20.0,
+          "max_points": 10.0,
+          "points": 8.0,
+          "status": "OK",
+          "confidence": 0.9,
+          "reason": "Pricing is clearly broken down with total cost, licensing, implementation and support, plus payment terms. Assumptions on integration effort are noted, though long‑term cost details are missing.",
+          "quote": "Total (excluding GST) 7,50,00,000. Integration effort beyond 40 person-days will be charged at INR 65,000 per person-day. Payment: 30% on signing, 40% at pilot, 30% at go-live.",
+          "quote_page": 1,
+          "quote_ok": true,
+          "strengths": [
+            "Clear cost breakdown",
+            "Payment schedule"
+          ],
+          "gaps": [
+            "Integration cost not fully quantified"
+          ],
+          "questions": [
+            "Total cost of ownership beyond 3 years",
+            "Licensing renewal terms"
+          ],
+          "benchmark": 8.0,
+          "gap": 0.0,
+          "relative": 100.0
+        },
+        {
+          "id": 4,
+          "title": "Security & Compliance",
+          "weight": 20.0,
+          "max_points": 10.0,
+          "points": 9.0,
+          "status": "OK",
+          "confidence": 0.95,
+          "reason": "The supplier holds ISO 27001 and SOC 2 Type II certifications, offers data residency options, and enforces NDAs and annual security training, meeting most security requirements.",
+          "quote": "Northstar is ISO/IEC 27001 certified and ServicePoint holds a current SOC 2 Type II report. Hosting is in the customer's chosen cloud region, with EU data residency available as an option at extra cost.",
+          "quote_page": 2,
+          "quote_ok": true,
+          "strengths": [
+            "ISO 27001 certified",
+            "SOC 2 Type II report",
+            "Data residency options"
+          ],
+          "gaps": [
+            "EU residency incurs extra cost"
+          ],
+          "questions": [
+            "Frequency of security audits",
+            "Specific control details"
+          ],
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative": 100.0
+        },
+        {
+          "id": 5,
+          "title": "Support & Experience",
+          "weight": 10.0,
+          "max_points": 10.0,
+          "points": 9.0,
+          "status": "OK",
+          "confidence": 0.9,
+          "reason": "Provides 24x7 support with rapid response, cites extensive experience (19 years, 60+ projects) and includes relevant client references, though contact details are not provided.",
+          "quote": "Support is provided 24x7 through our Hyderabad service desk, with a 1-hour response for critical issues and a monthly service report.",
+          "quote_page": 2,
+          "quote_ok": true,
+          "strengths": [
+            "24x7 support",
+            "1‑hour critical response",
+            "Strong project experience"
+          ],
+          "gaps": [
+            "Reference contacts not disclosed"
+          ],
+          "questions": [
+            "Detailed SLA metrics",
+            "Support escalation matrix"
+          ],
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative": 100.0
+        }
+      ],
+      "absolute": 76.5,
+      "ppi": 87.2222,
+      "rank": 3,
+      "rank_note": "Lower PPI than Tarang Systems (87.2 vs 90.6)"
+    },
+    {
+      "supplier": "QuickDesk Solutions",
+      "submitted_on": "2026-09-08",
+      "experience": 2.0,
+      "filename": "QuickDesk - Proposal for Sundaram Retail.pdf",
+      "summary": "QuickDesk presents a concise technical and implementation proposal with clear timelines and pricing, but its architecture details and compliance certifications are limited. Support and experience are modest, and some cost and risk information remain incomplete.",
+      "risks": [],
+      "warnings": [],
+      "items": [
+        {
+          "id": 1,
+          "title": "Technical Capability",
+          "weight": 35.0,
+          "max_points": 10.0,
+          "points": 6.0,
+          "status": "OK",
+          "confidence": 0.8,
+          "reason": "The proposal mentions a REST API, CSV import, a generic webhook connector for SAP and Salesforce, and provides scalability testing up to 300 agents with confidence to 850 agents, but lacks detailed architecture description.",
+          "quote": "Scale: our largest customer today has 60 agents and we have tested the platform with 300 concurrent agents. We are confident it will scale to 850.",
+          "quote_page": 1,
+          "quote_ok": true,
+          "strengths": [
+            "Provides API and webhook connector",
+            "Scalability testing demonstrated"
+          ],
+          "gaps": [
+            "Limited architecture detail",
+            "Integration scope not fully defined"
+          ],
+          "questions": [
+            "Detailed system architecture diagram",
+            "Performance benchmarks"
+          ],
+          "benchmark": 9.0,
+          "gap": -3.0,
+          "relative": 66.6667
+        },
+        {
+          "id": 2,
+          "title": "Implementation Plan",
+          "weight": 15.0,
+          "max_points": 10.0,
+          "points": 7.0,
+          "status": "OK",
+          "confidence": 0.85,
+          "reason": "A clear 10‑week timeline with phases and a small dedicated team is provided, and risks are said to be handled as they arise, though no formal risk mitigation plan is included.",
+          "quote": "Weeks 1-2 account setup, weeks 3-7 configuration and ticket import, weeks 8-10 go-live for all stores together. Our team for this would be me as project lead plus two implementation consultants.",
+          "quote_page": 1,
+          "quote_ok": true,
+          "strengths": [
+            "Clear timeline and milestones",
+            "Defined staffing"
+          ],
+          "gaps": [
+            "Risk management described only informally"
+          ],
+          "questions": [
+            "Formal risk mitigation plan",
+            "Detailed resource allocation"
+          ],
+          "benchmark": 9.0,
+          "gap": -2.0,
+          "relative": 77.7778
+        },
+        {
+          "id": 3,
+          "title": "Commercial Value",
+          "weight": 20.0,
+          "max_points": 10.0,
+          "points": 8.0,
+          "status": "OK",
+          "confidence": 0.9,
+          "reason": "Pricing is broken down into onboarding and subscription costs with per‑seat pricing and quote validity, but taxes and integration cost details are not fully quantified.",
+          "quote": "One-time onboarding 38,00,000 Subscription, 850 seats x 36 months 4,89,60,000 Total for 3 years 5,27,60,000 Based on INR 1,600 per seat per month. This quote is valid for 30 days.",
+          "quote_page": 2,
+          "quote_ok": true,
+          "strengths": [
+            "Detailed cost breakdown",
+            "Per‑seat pricing clear"
+          ],
+          "gaps": [
+            "GST excluded, integration rates hourly"
+          ],
+          "questions": [
+            "Total cost including taxes",
+            "Clarification of any additional licensing fees"
+          ],
+          "benchmark": 8.0,
+          "gap": 0.0,
+          "relative": 100.0
+        },
+        {
+          "id": 4,
+          "title": "Security & Compliance",
+          "weight": 20.0,
+          "max_points": 10.0,
+          "points": 5.0,
+          "status": "OK",
+          "confidence": 0.8,
+          "reason": "The proposal states data encryption and cloud hosting and an intention to achieve SOC 2, but no current certifications or comprehensive compliance details are provided.",
+          "quote": "Data is hosted with a leading cloud provider and is encrypted. We are working towards SOC 2 and hope to start the audit next year. Customer data is currently stored in Singapore.",
+          "quote_page": 2,
+          "quote_ok": true,
+          "strengths": [
+            "Data encryption",
+            "Intent to obtain SOC 2"
+          ],
+          "gaps": [
+            "SOC 2 not yet achieved",
+            "No current certifications listed"
+          ],
+          "questions": [
+            "Current compliance certifications",
+            "Detailed privacy and auditability controls"
+          ],
+          "benchmark": 9.0,
+          "gap": -4.0,
+          "relative": 55.5556
+        },
+        {
+          "id": 5,
+          "title": "Support & Experience",
+          "weight": 10.0,
+          "max_points": 10.0,
+          "points": 6.0,
+          "status": "OK",
+          "confidence": 0.85,
+          "reason": "Support hours and response time are defined, and the company has some retail experience, but the client base is small and references are not yet provided.",
+          "quote": "Support is by email, Monday to Saturday 10am-7pm IST, with replies within one working day. QuickDesk started in 2023 and has 14 retail customers so far.",
+          "quote_page": 2,
+          "quote_ok": true,
+          "strengths": [
+            "Defined email support model",
+            "Quick response promise"
+          ],
+          "gaps": [
+            "Limited client base",
+            "References not supplied"
+          ],
+          "questions": [
+            "Case studies",
+            "Reference contact details"
+          ],
+          "benchmark": 9.0,
+          "gap": -3.0,
+          "relative": 66.6667
+        }
+      ],
+      "absolute": 63.5,
+      "ppi": 72.7778,
+      "rank": 4,
+      "rank_note": "Lower PPI than Northstar Consulting (72.8 vs 87.2)"
+    }
+  ],
+  "audit": []
+}

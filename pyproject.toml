@@ -1,0 +1,14 @@
+[project]
+name = "rfp-evaluation"
+version = "1.0.0"
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "N", "B"]
+ignore = ["N818"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
