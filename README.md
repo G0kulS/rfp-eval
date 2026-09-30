@@ -1,5 +1,8 @@
 # RFP Evaluation
 
+- Live app: https://rfp-eval-9ib8kpeirpmoiujwurcgs8.streamlit.app/
+- Code: https://github.com/G0kulS/rfp-eval
+
 ## What it does
 
 This Streamlit app reads supplier proposals (PDF), asks a language model to score each one against criteria stored in SQLite, and then ranks the suppliers with plain Python. The model only judges the content and quotes its evidence. Every total, benchmark, tie-break and rank is worked out in code, so the same validated scores always give the same ranking.
